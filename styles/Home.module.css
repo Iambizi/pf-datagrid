@@ -1,3 +1,13 @@
+/* My Styles */
+.lineHead{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.list{
+  /* Removing bullet points from list item */
+}
+/* My Styles */
 .main {
   display: flex;
   flex-direction: column;

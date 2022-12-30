@@ -31,13 +31,26 @@ export default function Home() {
               React Table
             </Heading>
           </Center>
-          <Center>
           <Text size="lg" mb={6}>
-              {/* Post a social media comment and get the post sentiment */}
-            </Text>
-          </Center>
+            <span className={styles.lineHead}>Context:</span> We need to find a
+            replacement for our current Material UI data Grids <br />
+            <span className={styles.lineHead}>Why:</span> What are the current
+            limitations of our Data grid solution that pushed us to make a
+            change <br />
+            <span className={styles.lineHead}>How:</span> What went into my
+            decision making process? A solution that offers the following
+            features:
+            {/* <ul className={styles.}>
+              <li className={styles.}></li>
+              <li className={styles.}></li>
+              <li className={styles.}></li>
+              <li className={styles.}></li>
+              <li className={styles.}></li>
+              <li className={styles.}></li>
+            </ul> <br /> */}
+            <span className={styles.lineHead}>What:</span> React Table Grid.
+          </Text>
         </Box>
-       
       </main>
     </>
   );
