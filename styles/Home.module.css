@@ -5,7 +5,8 @@
 }
 
 .list{
-  /* Removing bullet points from list item */
+  /* Css for Removing bullet points from list  */
+  list-style-type: none;
 }
 /* My Styles */
 .main {

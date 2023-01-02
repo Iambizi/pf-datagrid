@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import Link from 'next/link'
 import styles from "../styles/Home.module.css";
 import ColorModeButton from "../components/common/ColorMode";
 import { Heading, Center, Box, Text } from "@chakra-ui/react";
-
-const inter = Inter({ subsets: ["latin"] });
+import Table from "../components/table";
 
 export default function Home() {
   return (
@@ -37,20 +36,26 @@ export default function Home() {
             <span className={styles.lineHead}>Why:</span> What are the current
             limitations of our Data grid solution that pushed us to make a
             change <br />
-            <span className={styles.lineHead}>How:</span> What went into my
-            decision making process? A solution that offers the following
-            features:
-            {/* <ul className={styles.}>
-              <li className={styles.}></li>
-              <li className={styles.}></li>
-              <li className={styles.}></li>
-              <li className={styles.}></li>
-              <li className={styles.}></li>
-              <li className={styles.}></li>
-            </ul> <br /> */}
-            <span className={styles.lineHead}>What:</span> React Table Grid.
           </Text>
+          <span className={styles.lineHead}>What went into my
+            decision making process?: <br /></span>
+            Is it used and maintained by a large enough community? <br />
+            Is it lightweight or heavy? What are the tradeoffs of each? <br />
+            Does the solution offer the following features:  <br />
+            <ul>
+              <li className={styles.list}>- Multi Selection</li>
+              <li className={styles.list}>- Virtualization (long lists)</li>
+              <li className={styles.list}>- Rotate Grid</li>
+              <li className={styles.list}>- Cell Highlight</li>
+              <li className={styles.list}>- Ability to Remove rows/columns</li>
+              <li className={styles.list}>- Grid with checkboxes</li>
+              <li className={styles.list}>- Editable Grid</li>
+              <li className={styles.list}>- Drill down option within grid</li>
+              <li className={styles.list}>- Buttons Header</li>
+            </ul> <br />
+            <span className={styles.lineHead}>What:</span><Link href="/solution1">Material React Table</Link>
         </Box>
+        {/* <Table /> */}
       </main>
     </>
   );
