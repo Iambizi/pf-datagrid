@@ -1,4 +1,9 @@
 /* My Styles */
+
+.underline:hover {
+  font-weight: bold;
+}
+
 .lineHead{
   font-weight: bold;
   text-decoration: underline;

@@ -53,7 +53,7 @@ export default function Home() {
               <li className={styles.list}>- Drill down option within grid</li>
               <li className={styles.list}>- Buttons Header</li>
             </ul> <br />
-            <span className={styles.lineHead}>What:</span><Link href="/solution1">Material React Table</Link>
+            <span className={`${styles.lineHead} ${styles.underline}`}>What:</span><Link href="/solution1"><span className={`${styles.underline}`}>Material React Table</span></Link>
         </Box>
         {/* <Table /> */}
       </main>
