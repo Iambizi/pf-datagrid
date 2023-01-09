@@ -1,11 +1,24 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
-import ColorModeButton from "../components/common/ColorMode";
-import { Heading, Center, Box, Text } from "@chakra-ui/react";
-import Table from "../components/table";
+import styles from "../../styles/Home.module.css";
+import ColorModeButton from "../../components/common/ColorMode";
+import { Heading, Box } from "@chakra-ui/react";
+import MultiSelectionTable from "../../components/MultiSelectionTable";
+import VirtualizationTable from "../../components/VirtualizationTable"
+import React, { useMemo, useEffect, useState, Component } from "react";
 
-const Solution1 = () => {
+const Layout = ({children}:any) => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch('https://randomuser.me/api/?results=110')
+      .then((res) => res.json())
+      .then((result) => {
+        setPosts(result);
+      });
+      console.log(posts);
+  }, []);
+
   return (
     <>
       <Head>
@@ -28,11 +41,11 @@ const Solution1 = () => {
           mt={8}
           w="40vw"
         >
-          <Table />
+            {children}
         </Box>
       </main>
     </>
   );
 };
 
-export default Solution1;
+export default Layout;

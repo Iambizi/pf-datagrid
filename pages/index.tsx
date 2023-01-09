@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Link from 'next/link'
 import styles from "../styles/Home.module.css";
-import ColorModeButton from "../components/common/ColorMode";
 import { Heading, Center, Box, Text } from "@chakra-ui/react";
-import Table from "../components/table";
 
 export default function Home() {
   return (
@@ -16,7 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <ColorModeButton />
+          {/* <ColorModeButton /> */}
         </div>
         <Box
           display="flex"
@@ -35,7 +33,9 @@ export default function Home() {
             replacement for our current Material UI data Grids <br />
             <span className={styles.lineHead}>Why:</span> What are the current
             limitations of our Data grid solution that pushed us to make a
-            change <br />
+            change<br />
+            <span className={`${styles.lineHead} ${styles.underline}`}>What:</span><span> Material React Table</span>
+
           </Text>
           <span className={styles.lineHead}>What went into my
             decision making process?: <br /></span>
@@ -43,19 +43,17 @@ export default function Home() {
             Is it lightweight or heavy? What are the tradeoffs of each? <br />
             Does the solution offer the following features:  <br />
             <ul>
-              <li className={styles.list}>- Multi Selection</li>
-              <li className={styles.list}>- Virtualization (long lists)</li>
-              <li className={styles.list}>- Rotate Grid</li>
-              <li className={styles.list}>- Cell Highlight</li>
-              <li className={styles.list}>- Ability to Remove rows/columns</li>
-              <li className={styles.list}>- Grid with checkboxes</li>
-              <li className={styles.list}>- Editable Grid</li>
-              <li className={styles.list}>- Drill down option within grid</li>
-              <li className={styles.list}>- Buttons Header</li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/multiSelection">Multi Selection</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/virtualization">Virtualization (long lists)</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/rotateGrid">Rotate Grid</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/cellHighlight">Cell Highlight</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/addRemoveCR">Ability to Remove rows/columns</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/gridCheckBox">Grid with checkboxes</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/editGrid">Editable Grid</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/drillDown">Drill down option within grid</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/buttonsHeader">Buttons Header</Link></span></li>
             </ul> <br />
-            <span className={`${styles.lineHead} ${styles.underline}`}>What:</span><Link href="/solution1"><span className={`${styles.underline}`}>Material React Table</span></Link>
         </Box>
-        {/* <Table /> */}
       </main>
     </>
   );
