@@ -52,7 +52,12 @@ const MultiSelectionTable = ({ posts }) => {
       <MaterialReactTable
       columns={columns}
       data={data}
-      enableRowSelection
+      enableColumnActions={false}
+      enableColumnFilters={false}
+      enablePagination={false}
+      enableSorting={false}
+      enableBottomToolbar={false}
+      enableTopToolbar={false}
       getRowId={(row) => row.userId} //give each row a more useful id
       //pass our managed row selection state to the table to use
     />

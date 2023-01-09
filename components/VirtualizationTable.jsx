@@ -126,6 +126,10 @@ const VirtualizationTable = () => {
           rowVirtualizerInstanceRef={rowVirtualizerInstanceRef} //optional
           rowVirtualizerProps={{ overscan: 5 }} //optionally customize the row virtualizer
           columnVirtualizerProps={{ overscan: 2 }} //optionally customize the column virtualizer
+          enableColumnActions={false}
+      enableColumnFilters={false}
+      enableSorting={false}
+      enableTopToolbar={false}
         />
       </ThemeProvider>
     </>

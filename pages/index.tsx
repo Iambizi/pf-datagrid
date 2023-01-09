@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Link from 'next/link'
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import { Heading, Center, Box, Text } from "@chakra-ui/react";
+import ColorModeButton from "../components/common/ColorMode";
 
 export default function Home() {
   return (
@@ -13,9 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          {/* <ColorModeButton /> */}
-        </div>
+        <div className={styles.description}><ColorModeButton /></div>
         <Box
           display="flex"
           justifyContent="center"
@@ -33,26 +32,82 @@ export default function Home() {
             replacement for our current Material UI data Grids <br />
             <span className={styles.lineHead}>Why:</span> What are the current
             limitations of our Data grid solution that pushed us to make a
-            change<br />
-            <span className={`${styles.lineHead} ${styles.underline}`}>What:</span><span> Material React Table</span>
-
+            change
+            <br />
+            <span className={`${styles.lineHead} ${styles.underline}`}>
+              What:
+            </span>
+            {/* <span> Material React Table</span> */}
+            <span>
+              <b> Material-react-table</b> is a data grid library that is designed to be
+              easy to use and customize, with a wide range of features and
+              options. It is built with Material-UI.
+              </span>
+            <br />
           </Text>
-          <span className={styles.lineHead}>What went into my
-            decision making process?: <br /></span>
-            Is it used and maintained by a large enough community? <br />
-            Is it lightweight or heavy? What are the tradeoffs of each? <br />
-            Does the solution offer the following features:  <br />
-            <ul>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/multiSelection">Multi Selection</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/virtualization">Virtualization (long lists)</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/rotateGrid">Transpose Grid</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/cellHighlight">Cell Highlight</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/addRemoveCR">Ability to Remove rows/columns</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/gridCheckBox">Grid with checkboxes</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/editGrid">Editable Grid</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/drillDown">Drill down option within grid</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/buttonsHeader">Buttons Header</Link></span></li>
-            </ul> <br />
+          <span className={styles.lineHead}>
+            What went into my decision making process?: <br />
+          </span>
+          Is it used and maintained by a large enough community? <br />
+          Is it lightweight or heavy? What are the tradeoffs of each? <br />
+          Does the solution offer the following features: <br />
+          <ul>
+            <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/multiSelection">Multi Selection (+ cellHighlight)</Link>
+              </span>
+            </li>
+            <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/virtualization">Virtualization (long lists)</Link>
+              </span>
+            </li>
+            <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/rotateGrid">Transpose Grid</Link>
+              </span>
+            </li>
+            {/* <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/cellHighlight">Cell Highlight</Link>
+              </span>
+            </li> */}
+            {/* <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/addRemoveCR">Ability to Remove rows/columns</Link>
+              </span>
+            </li> */}
+            <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/gridCheckBox">Grid with checkboxes</Link>
+              </span>
+            </li>
+            <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/editGrid">Editable Grid ( Add/remove, re-order columns, Add button in header)</Link>
+              </span>
+            </li>
+            <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/drillDown">Drill down option within grid</Link>
+              </span>
+            </li>
+            {/* <li className={styles.list}>
+              -{" "}
+              <span className={`${styles.lineHead} ${styles.underline}`}>
+                <Link href="/buttonsHeader">Buttons Header</Link>
+              </span>
+            </li> */}
+          </ul>{" "}
+          <br />
         </Box>
       </main>
     </>
