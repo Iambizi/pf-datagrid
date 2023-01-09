@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import MaterialReactTable from "material-react-table";
 import { Heading, Text } from "@chakra-ui/react";
 import { ThemeProvider, createTheme } from "@mui/material";
-import EditCrudTable from "../components/EditCrud"
+import EditCrudTable from "./EditCrudTable"
 
 const EditGridTable = () => {
   const defaultMaterialTheme = createTheme();
@@ -78,7 +78,8 @@ const EditGridTable = () => {
   return (
     <>
         <Heading mb="3" mt="4">Editable Grid</Heading>
-        <p>Allows for: column ordering, adding or removing rows </p>
+        <p>Allows for: <b>column ordering</b>, <b>adding or removing rows</b> </p>
+        <br/>
       <ThemeProvider theme={defaultMaterialTheme}>
         <MaterialReactTable
           columns={columns}

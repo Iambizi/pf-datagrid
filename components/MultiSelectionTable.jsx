@@ -52,6 +52,7 @@ const MultiSelectionTable = ({ posts }) => {
       <MaterialReactTable
       columns={columns}
       data={data}
+      enableRowSelection
       enableColumnActions={false}
       enableColumnFilters={false}
       enablePagination={false}
