@@ -45,7 +45,7 @@ export default function Home() {
             <ul>
               <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/multiSelection">Multi Selection</Link></span></li>
               <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/virtualization">Virtualization (long lists)</Link></span></li>
-              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/rotateGrid">Rotate Grid</Link></span></li>
+              <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/rotateGrid">Transpose Grid</Link></span></li>
               <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/cellHighlight">Cell Highlight</Link></span></li>
               <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/addRemoveCR">Ability to Remove rows/columns</Link></span></li>
               <li className={styles.list}>- <span className={`${styles.lineHead} ${styles.underline}`}><Link href="/gridCheckBox">Grid with checkboxes</Link></span></li>
