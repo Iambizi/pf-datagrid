@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import MaterialReactTable from "material-react-table";
 import { Heading } from "@chakra-ui/react";
 import { ThemeProvider, createTheme } from "@mui/material";
+import CellHighlight2 from "./CellHighlight2";
 
 const CellHighLightTable = () => {
 
@@ -62,6 +63,8 @@ const CellHighLightTable = () => {
           }}
         />
       </ThemeProvider>
+      <Heading mb="3">Cell Highlight w and w/o checkboxes</Heading>
+      <CellHighlight2 />
     </>
   );
 };

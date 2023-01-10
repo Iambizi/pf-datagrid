@@ -1,7 +1,8 @@
 import React, { useMemo, useState } from "react";
-import { Heading } from "@chakra-ui/react";
+import { Heading, Text } from "@chakra-ui/react";
 import MaterialReactTable from "material-react-table";
 import { ThemeProvider, createTheme } from "@mui/material";
+import CellHighlight2 from "./CellHighlight2";
 
 
 //mock data - strongly typed if you are using TypeScript (optional, but recommended)
@@ -48,6 +49,7 @@ const MultiSelectionTable = ({ posts }) => {
   return (
     <>
       <Heading mb="3">Multi Selection Table</Heading>
+      <Text mb="3">Also allows for: Cell Highlight w and w/o checkboxes</Text>
       <ThemeProvider theme={defaultMaterialTheme}>
       <MaterialReactTable
       columns={columns}
@@ -63,6 +65,8 @@ const MultiSelectionTable = ({ posts }) => {
       //pass our managed row selection state to the table to use
     />
       </ThemeProvider>
+      <br/>
+      <CellHighlight2 />
     </>
   );
 };

@@ -104,7 +104,7 @@ export default function Home() {
               -{" "}
               <span className={`${styles.lineHead} ${styles.underline}`}>
                 <Link href="/multiSelection">
-                  Multi Selection (+ cellHighlight)
+                  Multi Selection (+ cell highlight)
                 </Link>
               </span>
             </li>
@@ -123,7 +123,7 @@ export default function Home() {
             <li className={styles.list}>
               -{" "}
               <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/gridCheckBox">Grid with checkboxes</Link>
+                <Link href="/gridCheckBox">Grid with custom checkboxes</Link>
               </span>
             </li>
             <li className={styles.list}>
