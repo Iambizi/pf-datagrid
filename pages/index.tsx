@@ -24,27 +24,29 @@ export default function Home() {
         >
           <Center>
             <Heading as="h1" size="2xl" mb={6}>
-              React Table
+              Data Grid Research
             </Heading>
           </Center>
-          <Text size="lg" mb={6}>
+          <Text size="lg" mb={3}>
             <span className={styles.lineHead}>Context:</span> We need to find a
             replacement for our current Material UI data Grids <br />
-            <span className={styles.lineHead}>Why:</span> What are the current
-            limitations of our Data grid solution that pushed us to make a
-            change
-            <br />
-            <span className={`${styles.lineHead} ${styles.underline}`}>
-              What:
-            </span>
-            {/* <span> Material React Table</span> */}
-            <span>
-              <b> Material-react-table</b> is a data grid library that is designed to be
-              easy to use and customize, with a wide range of features and
-              options. It is built with Material-UI.
-              </span>
-            <br />
+            The main limitation we are experiencing is an inability to virtualize long lists. 
+            <br /> (Capped at 100)
           </Text>
+          <Text mb="3">
+          <span className={`${styles.lineHead} ${styles.underline}`}>
+              Proposed Solution:
+            </span>
+            <span>
+              <a href="https://www.material-react-table.com/" target="_blank" className={styles.underline}> Material-react-table</a> 
+              </span>
+              <ul>
+            <li className={styles.list}>- built with Material-UI</li>
+            <li className={styles.list}>- Offers more options for customizing the appearance of our tables</li>
+            <li className={styles.list}>- Allows <b>memoization</b>: has optional props that will allow you to either memoize table cells, table rows, or the entire table body in order to improve render performance on large tables.</li>
+          </ul>
+          </Text>
+          
           <span className={styles.lineHead}>
             What went into my decision making process?: <br />
           </span>
@@ -61,7 +63,7 @@ export default function Home() {
             <li className={styles.list}>
               -{" "}
               <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/virtualization">Virtualization (long lists)</Link>
+                <Link href="/virtualization">Table Virtualization</Link>
               </span>
             </li>
             <li className={styles.list}>

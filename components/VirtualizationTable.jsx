@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import MaterialReactTable from "material-react-table";
-import { Heading } from "@chakra-ui/react";
+import { Heading, Text } from "@chakra-ui/react";
 import { makeData } from "./makeData";
 import { ThemeProvider, createTheme } from "@mui/material";
 
@@ -108,7 +108,7 @@ const VirtualizationTable = () => {
       <Heading mb="3" mt="4">
         Virtualization Table
       </Heading>
-
+      <Text mb="3">Allows for table virtualization of long lists. 10K entries max. <br/>The table below lists out 500 entries</Text>
       <ThemeProvider theme={defaultMaterialTheme}>
         <MaterialReactTable
           columns={columns}
