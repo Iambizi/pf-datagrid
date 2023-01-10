@@ -119,7 +119,8 @@ export default function Home() {
             <li className={styles.list}>
               -{" "}
               <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/rotateGrid">Transpose Grid</Link>
+                {/* <Link href="/rotateGrid">Transpose Grid</Link> */}
+                Transpose Grid
               </span>
             </li>
             <li className={styles.list}>
