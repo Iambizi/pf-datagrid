@@ -49,7 +49,7 @@ const RotateGridTable = () => {
   return (
     <>
       <Heading mb="3" mt="4">
-        Rotate Grid Table
+        Transpose/Rotate Grid Table
       </Heading>
       <button onClick={handleTranspose}>Toggle Transpose</button>
       <ThemeProvider theme={defaultMaterialTheme}>
