@@ -14,7 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}><ColorModeButton /></div>
+        <div className={styles.description}>
+          <ColorModeButton />
+        </div>
         <Box
           display="flex"
           justifyContent="center"
@@ -30,34 +32,80 @@ export default function Home() {
           <Text size="lg" mb={3}>
             <span className={styles.lineHead}>Context:</span> We need to find a
             replacement for our current Material UI data Grids <br />
-            The main limitation we are experiencing is an inability to virtualize long lists. 
+            The main limitation we are experiencing is an inability to
+            virtualize long lists.
             <br /> (Capped at 100)
           </Text>
           <Text mb="3">
-          <span className={`${styles.lineHead} ${styles.underline}`}>
+            <span className={`${styles.lineHead} ${styles.underline}`}>
               Proposed Solution:
             </span>
             <span>
-              <a href="https://www.material-react-table.com/" target="_blank" className={styles.underline}> Material-react-table</a> 
-              </span>
-              <ul>
-            <li className={styles.list}>- built with Material-UI</li>
-            <li className={styles.list}>- Offers more options for customizing the appearance of our tables</li>
-            <li className={styles.list}>- Allows <b>memoization</b>: has optional props that will allow you to either memoize table cells, table rows, or the entire table body in order to improve render performance on large tables.</li>
-          </ul>
+              <a
+                href="https://www.material-react-table.com/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.underline}
+              >
+                {" "}
+                Material-react-table
+              </a>
+            </span>
+            <ul>
+            <li className={styles.list}>
+                - is built with the popular Material-UI
+                framework, which provides a consistent, modern look and feel.
+              </li>
+              <li className={styles.list}>
+                - Offers more options for customizing the appearance of our
+                tables
+              </li>
+              <li className={styles.list}>
+                - Allows <b>memoization</b>: has optional props that will allow
+                you to either memoize table cells, table rows, or the entire
+                table body in order to improve render performance on large
+                tables.
+              </li>
+              <li className={styles.list}>
+                - Offers a wide range of customization
+                options, such as the ability to change the colors of various
+                elements or to rotate the table.
+              </li>
+              <li className={styles.list}>
+                - Provides built-in support for sorting,
+                filtering, and searching.
+              </li>
+              <li className={styles.list}>
+                - API is
+                easy to use.
+              </li>
+              <li className={styles.list}>
+                - Is lightweight and
+                performance-optimized.
+              </li>
+              <li className={styles.list}>
+                - Has good documentation and a large,
+                active community of users.
+              </li>
+              <li className={styles.list}>
+                - Is regularly updated and maintained.
+              </li>
+              <li className={styles.list}>
+                - Has a clean, modern codebase that is
+                easy to extend and modify.
+              </li>
+            </ul>
           </Text>
-          
           <span className={styles.lineHead}>
-            What went into my decision making process?: <br />
+            Feautures: <br />
           </span>
-          Is it used and maintained by a large enough community? <br />
-          Is it lightweight or heavy? What are the tradeoffs of each? <br />
-          Does the solution offer the following features: <br />
           <ul>
             <li className={styles.list}>
               -{" "}
               <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/multiSelection">Multi Selection (+ cellHighlight)</Link>
+                <Link href="/multiSelection">
+                  Multi Selection (+ cellHighlight)
+                </Link>
               </span>
             </li>
             <li className={styles.list}>
@@ -72,18 +120,6 @@ export default function Home() {
                 <Link href="/rotateGrid">Transpose Grid</Link>
               </span>
             </li>
-            {/* <li className={styles.list}>
-              -{" "}
-              <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/cellHighlight">Cell Highlight</Link>
-              </span>
-            </li> */}
-            {/* <li className={styles.list}>
-              -{" "}
-              <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/addRemoveCR">Ability to Remove rows/columns</Link>
-              </span>
-            </li> */}
             <li className={styles.list}>
               -{" "}
               <span className={`${styles.lineHead} ${styles.underline}`}>
@@ -93,7 +129,10 @@ export default function Home() {
             <li className={styles.list}>
               -{" "}
               <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/editGrid">Editable Grid ( Add/remove, re-order columns, Add button in header)</Link>
+                <Link href="/editGrid">
+                  Editable Grid ( Add/remove, re-order columns, Add button in
+                  header)
+                </Link>
               </span>
             </li>
             <li className={styles.list}>
@@ -102,13 +141,7 @@ export default function Home() {
                 <Link href="/drillDown">Drill down option within grid</Link>
               </span>
             </li>
-            {/* <li className={styles.list}>
-              -{" "}
-              <span className={`${styles.lineHead} ${styles.underline}`}>
-                <Link href="/buttonsHeader">Buttons Header</Link>
-              </span>
-            </li> */}
-          </ul>{" "}
+          </ul>
           <br />
         </Box>
       </main>
