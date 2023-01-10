@@ -51,9 +51,11 @@ export default function Home() {
                 Material-react-table
               </a>
             </span>
-            <ul>
+          </Text>
+          <Box mb="3">
+          <ul>
             <li className={styles.list}>
-                - is built with the popular Material-UI
+                - Is built with the popular Material-UI
                 framework, which provides a consistent, modern look and feel.
               </li>
               <li className={styles.list}>
@@ -95,7 +97,7 @@ export default function Home() {
                 easy to extend and modify.
               </li>
             </ul>
-          </Text>
+          </Box>
           <span className={styles.lineHead}>
             Feautures: <br />
           </span>

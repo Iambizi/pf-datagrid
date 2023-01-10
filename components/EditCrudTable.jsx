@@ -157,7 +157,7 @@ const EditCrudTable = () => {
         renderTopToolbarCustomActions={() => (
           <Button
             color="secondary"
-            onClick={() => setCreateModalOpen(true)}
+            onClick={() => (console.log("hello"))}
             variant="contained"
           >
             Create New Account
