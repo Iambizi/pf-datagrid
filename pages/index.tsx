@@ -56,7 +56,7 @@ export default function Home() {
           <ul>
             <li className={styles.list}>
                 - Is built with the popular Material-UI
-                framework, which provides a consistent, feel to what we currently have. Compatible with our existing theme.
+                framework, which provides a consistent, feel to what we currently have. Compatible with our existing themes.
               </li>
               <li className={styles.list}>
                 - Offers more options for customizing the appearance of our
@@ -83,7 +83,7 @@ export default function Home() {
               </li>
               <li className={styles.list}>
                 - Is lightweight and
-                performance-optimized.
+                performance-optimized. (under 41kb gzipped)
               </li>
               <li className={styles.list}>
                 - Has good documentation and a large,
