@@ -56,7 +56,7 @@ export default function Home() {
           <ul>
             <li className={styles.list}>
                 - Is built with the popular Material-UI
-                framework, which provides a consistent, modern look and feel.
+                framework, which provides a consistent, feel to what we currently have. Compatible with our existing theme.
               </li>
               <li className={styles.list}>
                 - Offers more options for customizing the appearance of our
@@ -118,9 +118,9 @@ export default function Home() {
             </li>
             <li className={styles.list}>
               -{" "}
-              <span className={`${styles.lineHead} ${styles.underline}`}>
+              <span className={``}>
                 {/* <Link href="/rotateGrid">Transpose Grid</Link> */}
-                Transpose Grid
+                <b>Transpose Grid</b>
               </span>
             </li>
             <li className={styles.list}>
