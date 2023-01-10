@@ -35,6 +35,35 @@ export default function Home() {
             The main limitation we are experiencing is an inability to
             virtualize long lists.
             <br /> (Capped at 100)
+            <br/>
+            Options I considered: <br/>
+            <a
+                href="https://react-table-library.com/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.underline}
+              >
+                {" "}
+                - React table library
+              </a> <br/>
+              <a
+                href="https://tanstack.com/table/v8/?from=reactTableV7&original=https://react-table-v7.tanstack.com/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.underline}
+              >
+                {" "}
+                - Tanstack Table
+              </a> <br />
+              <a
+                href="https://www.ag-grid.com/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.underline}
+              >
+                {" "}
+                - AG Grid Table
+              </a> <br />  
           </Text>
           <Text mb="3">
             <span className={`${styles.lineHead} ${styles.underline}`}>
